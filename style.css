@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Seogoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: whitesmoke;
+}
+
+/* Navbar */
+header {
+    background: navy;
+    padding: 15px 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: gold;
+}
+
+.btn {
+    background: gold;
+    color: navy;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: goldenrod;
+}
+
+.btn.secpndary {
+    background: white;
+    color: navy;
+    color: 1px solid navy;
+}
+
+.btn.secpndary:hover {
+    background: lightgray;
+}
+
+/* Hero Section */
+.hero {
+    background: url(vadim-sherbakov-d6ebY-faOO0-unsplash\ \(1\).jpg);
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Intro Section */
+.intro {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: navy;
+}
+
+/* Featured Courses */
+.featured {
+    padding: 60px 50px;
+    background: ghostwhite;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: navy;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.course-card {
+    background: white;
+    border-radius: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.course-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    color: navy;
+    margin-bottom: 10px;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 50px;
+    background: white;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: navy;
+    margin-bottom: 30px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.testimonial {
+    background: ghostwhite;
+    padding: 20px;
+    border-radius: 8px;
+    font-style: italic;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.cta .btn {
+    background: gold;
+    color: navy;
+}
+
+
+/* Footer */
+footer {
+    background: black;
+    color: lightgray;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-links a {
+    color: gold;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ========== COURSES ========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: white;
+    color: black;
+}
+
+/* Navbar */
+header {
+    background: navy;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:active {
+    text-decoration: underline;
+}
+
+/* Courses Section */
+.courses {
+    padding: 2rem;
+    text-align: center;
+}
+
+.courses h2 {
+    margin-bottom: 2rem;
+    color: navy;
+}
+
+/* Grid for 15 courses (5 per row) */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+/* Courses Card */
+.course-card {
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.course-card h3 {
+    margin-bottom: 0.5rem;
+    color: darkblue;
+}
+
+.course-card p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: navy;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    color: darkred;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+
+
+/* ========== BLOGS ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: white;
+    color: black;
+}
+
+/* Navbar */
+header {
+    background: navy;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header nav h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav li a.active {
+    text-decoration: underline;
+}
+
+/* Blog Section */
+.blog {
+    padding: 2rem;
+    text-align: center;
+}
+
+.blog h2 {
+    margin-bottom: 1rem;
+    color: navy;
+}
+
+.blog p {
+    margin-bottom: 1rem;
+    color: dimgray;
+}
+
+/* Posts + Sidebar */
+.blog-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* Blog posts grid */
+.blog-posts {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Blog posts card */
+.post {
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.post img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.post h3 {
+    margin-bottom: 0.5rem;
+    color: darkblue;
+}
+
+.post p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: black;
+}
+
+/* Sidebar categories */
+.categories {
+    flex: 1;
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+}
+
+.categories h3 {
+    margin-bottom: 1rem;
+    color: darkred;
+}
+
+.categories ul {
+    list-style: none;
+}
+
+.categories ul li {
+    margin-bottom: 0.5rem;
+}
+
+.categories ul li a {
+    color: navy;
+    text-decoration: none;
+}
+
+.categories ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: navy;
+    color: navy;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: navy;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* ========== CONTACT ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: white;
+    color: black;
+}
+
+/* Navbar */
+header {
+    background: navy;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav li a.active {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+    color: navy;
+}
+
+.contact p {
+    margin-bottom: 2rem;
+    color: dimgray;
+}
+
+/* Contact container form + info */
+.contact-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 2;
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Contact Info */
+.contact-info {
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.contact-info h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: darkblue;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: navy;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: navy;
+    color: white;
+    margin-top: 2rem;
+}
